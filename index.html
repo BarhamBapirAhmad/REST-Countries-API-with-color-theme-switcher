@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST Countries API with Color Theme Switcher Master</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-veryLightGray font-nunito">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where in the world?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-px7Efz/5lrDy+Ky/3bSgNR5X2ADZltiZj7Nktxos4QG2OlnHyqDhR4RQZyhjbFe2" crossorigin="anonymous">
+    <style>
+        /* Your CSS styles here */
+        .bg-white {
+            background-color: white;
+        }
+        .shadow-sm {
+                    }
+       
+    </style>
+</head>
+<body>
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto p-6 flex justify-between">
+            <h1 class="text-lg font-extrabold">Where in the world?</h1>
+            <div id="dark-mode-toggle" class="cursor-pointer">
+
+                <i class="fas fa-moon mr-2">  </i>
+             <span>    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="white" d="M152.62 126.77c0-33 4.85-66.35 17.23-94.77C87.54 67.83 32 151.89 32 247.38C32 375.85 136.15 480 264.62 480c95.49 0 179.55-55.54 215.38-137.85c-28.42 12.38-61.8 17.23-94.77 17.23c-128.47 0-232.61-104.14-232.61-232.61"/></svg>  Dark Mode </span> 
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container mx-auto flex flex-col p-6 space-y-4 md:flex-row md:justify-between md:items-center md:space-y-0">
+            <div id="search-input" class="bg-white shadow-md p-4 px-6 rounded-md text-darkGray flex items-center md:w-[50%]">
+                <i class="fas fa-search mr-4"></i>
+                <input class="flex-1 border-none outline-none bg-transparent" autocomplete="off" type="text" placeholder="Search for a country...">
+            </div>
+            <div id="filter" class="w-56 relative bg-white">
+                <div class="flex justify-between items-center bg-transparent shadow-md p-4 rounded-md cursor-pointer">
+                    <p id="filter-text">Filter by Region</p>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <ul class="absolute hidden w-full bg-white rounded-md p-2 shadow-sm space-y-1">
+                    <li class="cursor-pointer hover:bg-veryLightGray p-2">Africa</li>
+                    <li class="cursor-pointer hover:bg-veryLightGray p-2">America</li>
+                    <li class="cursor-pointer hover:bg-veryLightGray p-2">Asia</li>
+                    <li class="cursor-pointer hover:bg-veryLightGray p-2">Europe</li>
+                    <li class="cursor-pointer hover:bg-veryLightGray p-2">Oceania</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countries Cards -->
+    <main>
+        <div class="container mx-auto p-6 flex flex-col items-center gap-5 md:flex-row md:justify-between md:flex-wrap md:items-stretch">
+            <!-- Your country cards will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
